@@ -29,11 +29,11 @@ galleryList.insertAdjacentHTML("beforeend", photos);
 const handleGalleryClick = (event) => {
   event.preventDefault();
 
-  if (event.target.nodename !== "IMG") {
+  if (event.target.nodeName !== "IMG") {
     return;
   }
 
-  const urlOriginal = event.target.dateset.source;
+  const urlOriginal = event.target.dataset.source;
 
   // Create Baisc Lightbox Instance
 
